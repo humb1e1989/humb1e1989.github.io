@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg # 这里改图片 放头像
   image_circular: false # crops the image to make it circular
   more_info: > # 这里是Pic下面的小字
-    <p> - M.Sc Computer Science @ T<a href='#'>The University of British Columbia， Canada</a></p>
+    <p> - M.Sc Computer Science @ <a href='#'>The University of British Columbia， Canada</a></p>
     <p> - B.Sc. Computer Science @ T<a href='#'>The University of Liverpool</a>， United Kingdom</p>
-    <p> - <a href='#'>Survive A1one Inc.</a>.</p>
+    <p> - <a href='#'>Survive A1one Inc</a>.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
