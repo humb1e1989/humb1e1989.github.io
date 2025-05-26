@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg # 这里改图片 放头像
   image_circular: false # crops the image to make it circular
   more_info: > # 这里是Pic下面的小字
-    <p>HCI Researcher</p>
-    <p>Digital Artist</p>
+    <p>M.Sc Computer Science @ The University of British Columbia</p>
+    <p>B.Sc. Computer Science @ The University of Liverpool</p>
     <p>Survive A1one Inc.</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -24,7 +24,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 ---
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
