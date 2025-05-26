@@ -431,16 +431,18 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-a-long-announcement-with-details-kkk",
+          title: 'A long announcement with details KKK',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1/";
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-announcement-3",
-          title: 'Announcement_3',
+            },},{id: "news-announcement",
+          title: 'Announcement',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
