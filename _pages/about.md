@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: > # 这里是Pic下面的小字
     <p> - M.Sc Computer Science @ <a href='#'>The University of British Columbia, CA</a></p>
-    <p> - B.Sc. Computer Science @ T<a href='#'>The University of Liverpool, UK</a></p>
+    <p> - B.Sc. Computer Science @ <a href='#'>The University of Liverpool, UK</a></p>
     <p> - <a href='#'>Survive A1one Inc</a>.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
