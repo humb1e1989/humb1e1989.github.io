@@ -436,13 +436,13 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-announcement-2-a-long-announcement-with-details",
+          title: 'Announcement 2 - A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-announcement",
-          title: 'Announcement',
+            },},{id: "news-announcement-3",
+          title: 'Announcement 3',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
