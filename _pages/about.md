@@ -29,7 +29,7 @@ latest_posts:
 ---
 
 # I am:
-**Currently** pursuing an **M.Sc. in Computer Science** at <a href='https://www.ubc.ca/about/'>The University of British Columbia (UBC)</a>, under the supervision of <a href='https://cmps-people.ok.ubc.ca/mkhasan/'>Dr. Khalad Hasan</a> (Director of <a href='https://www.researchgate.net/lab/Khalad-Hasan-Lab'> UBC-O HCI Lab</a> ) and <a href='https://cmps-people.ok.ubc.ca/pirani/'> Prof. Pourang P.Irani</a> (Director of <a href='https://ovi.ok.ubc.ca/'> **UBC-O OVI Lab**</a>) since January 2025, I have been conducting research at the intersection of **eXplainable AI (XAI)** and **eXtended Reality (XR)**.
+**Currently** pursuing an **M.Sc. in Computer Science** at <a href='https://www.ubc.ca/about/'>The University of British Columbia (UBC)</a>, under the supervision of <a href='https://cmps-people.ok.ubc.ca/mkhasan/'>Dr. Khalad Hasan</a> (Director of <a href='https://www.researchgate.net/lab/Khalad-Hasan-Lab'> UBC-O HCI Lab</a> ) and <a href='https://cmps-people.ok.ubc.ca/pirani/'> Prof. Pourang P.Irani</a> (Director of <a href='https://ovi.ok.ubc.ca/'> UBC-O OVI Lab</a>) since **January 2025**, I have been conducting research at the intersection of **eXplainable AI (XAI)** and **eXtended Reality (XR)**.
 
 My CURRENT research focuses on:
 1. Investigating how explainable AI can enhance human understanding and trust in XR-based decision-making environments.
