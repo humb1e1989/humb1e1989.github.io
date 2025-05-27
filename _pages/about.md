@@ -28,14 +28,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently pursuing an M.Sc. in Computer Science at the University of British Columbia (UBC), under the supervision of Dr. Khalad Hasan (Director of UBC-O HCI Lab) and Prof. Pourang Irani (Director of UBC-O OVi Lab). Since January 2025, I have been conducting research at the intersection of eXplainable AI (XAI) and eXtended Reality (XR).
+I am currently pursuing an M.Sc. in Computer Science at <a href='https://www.ubc.ca/about/'>The University of British Columbia (UBC)</a>, under the supervision of <a href='https://cmps-people.ok.ubc.ca/mkhasan/'>Dr. Khalad Hasan</a> (Director of <a href='https://www.researchgate.net/lab/Khalad-Hasan-Lab'> UBC-O HCI Lab</a> ) and <a href='https://cmps-people.ok.ubc.ca/pirani/'> Prof. Pourang P.Irani</a> (Director of <a href='https://ovi.ok.ubc.ca/'> UBC-O OVI Lab</a>) since January 2025, I have been conducting research at the intersection of eXplainable AI (XAI) and eXtended Reality (XR).
 
 My current research focuses on:
 1. Investigating how explainable AI can enhance human understanding and trust in XR-based decision-making environments.
 2. Exploring interaction techniques for delivering explanations in immersive spaces.
 3. Studying how users collaborate with AI systems in XR and how explanation affects such collaboration.
 
-I also serve as a Research Assistant at UBC’s Data Transparency Cluster (DTC), where I contribute to a systematic review on trustworthiness in AI and related fields.
+I also serve as a <a href='https://digital-transparency.ok.ubc.ca/research-team/our-research-assistants/iverson-schuchen-yuan/'> Research Assistant</a> at UBC’s <a href='https://research.ok.ubc.ca/research-excellence/research-clusters/digital-transparency/'> Digital Transparency Cluster (DTC)</a>,, where I contribute to a systematic review on trustworthiness in AI and related fields.
 
 Previously, I worked closely with Prof. Haining Liang (HKUST) on upper-limb rehabilitation in Virtual Reality (VR), advised by Dr. Vijayakumar Nanjappan (University College Cork), and co-developed a high-precision Augmented Reality (AR) keyboard using the motion capture system “VICON.” 
 
