@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "I am >>> I was"
+subtitle: "<em> HCI Researcher</em> | <strong> Software Devloper </strong> | <strong> Artist </strong>"
 
 profile:
   align: right
