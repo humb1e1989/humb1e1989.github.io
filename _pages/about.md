@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Human-Computer Interaction (HCI) Researcher ｜ Software Engineer ｜ Artist
+subtitle: "I am >>> I was"
 
 profile:
   align: right
@@ -38,14 +38,16 @@ My CURRENT research focuses on:
 
 I also serve as a <a href='https://digital-transparency.ok.ubc.ca/research-team/our-research-assistants/iverson-shuchen-yuan/'> **Research Assistant**</a> at UBC’s <a href='https://research.ok.ubc.ca/research-excellence/research-clusters/digital-transparency/'> Digital Transparency Cluster (DTC)</a>, where I contribute to a systematic review on trustworthiness in AI and related fields.
 
+## Teaching:
 I am currently a **Teaching Assistant** at UBC for the course ***COSC 328 - Introduction to Networking*** **@ UBC** working with <a href='https://www.researchgate.net/profile/Scott-Fazackerley-2'> Dr. Scott Fazackerley</a>. , where I mainly assisted with **Networking** Assignment and Lab grading, weekly tutorials support for 110+ students. I am also TA incourse ***COSC 121 - Computer Programmmin II*** **@ UBC** with Dr. Scott where I am mainly responsible for final exam marking suppot for **Java programming** and basic programming concepts.
 
 # I was:
 Previously, I worked closely with <a href='https://hai-ning-liang.github.io/'> Prof. Haining Liang (HKUST, Prev. UoL&XJTLU)</a>. in <a href='https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang'> X-CHI Lab</a> on upper-limb rehabilitation in Virtual Reality (VR), co-advised by <a href='https://www.ucc.ie/en/compsci/people/nanjappandrvijayakumar/'> Dr. Vijayakumar Nanjappan (University College Corek, Ireland)</a>, and focused on prototyping high-precision Augmented Reality (AR) keyboard upon **Motion Capture System** <a href='https://www.vicon.com/'> VICON</a>. 
 
-During my undergraduate, I led an independent research project designing and evaluating an AR-based fitness assistant for obese individuals using Microsoft HoloLens 2, which received **¥2,000** research scholarship and was presented at the <a href='https://www.xjtlu.edu.cn/en/study/departments/academy-of-future-education/learning-institute-for-future-excellence/programme/xjtlu-student-symposium-of-research-led-learning'> XJTLU Student Research-led Learning Symposium (SSRL)</a> 2023. I also collaborated with <a href='https://scholar.xjtlu.edu.cn/en/persons/JianjunChen'> Dr.Jianjun Chen</a>. on machine learning algorithms and optimization techniques for the Vehicle Routing Problem (VRP) in logistics field, supported by a **¥6,000**  <a href='https://www.xjtlu.edu.cn/en/study/surf'> Summer Undergraduate Research Fellowship</a> at XJTLU. I was awarded the University Academic Achievement Award (**Top 10%** scholarship) and graduated in July 2024 with **First-Class Distinction** (Major **GPA: 3.95/4**) from the **University of Liverpool** (via XJTLU's dual-degree program).
+During my undergraduate, I led an independent research project designing and evaluating an AR-based fitness assistant for obese individuals using Microsoft HoloLens 2, which received **¥2,000** research scholarship and was presented at the <a href='https://www.xjtlu.edu.cn/en/study/departments/academy-of-future-education/learning-institute-for-future-excellence/programme/xjtlu-student-symposium-of-research-led-learning'> XJTLU Student Research-led Learning Symposium (SSRL)</a> 2023. I also collaborated with <a href='https://scholar.xjtlu.edu.cn/en/persons/JianjunChen'> Dr.Jianjun Chen</a>. on machine learning algorithms and optimization techniques for the Vehicle Routing Problem (VRP) in logistics field, supported by a **¥6,000**  <a href='https://www.xjtlu.edu.cn/en/study/surf'> Summer Undergraduate Research Fellowship</a> at XJTLU. I was awarded the University Academic Achievement Award (**Top 10%** scholarship, **¥6,000**) and graduated in July 2024 with **First-Class Distinction** (Major **GPA: 3.95/4**) from the **University of Liverpool** (via XJTLU's dual-degree program).
 
-Previously, I served as a TA for high-level CS Course ***CPT203 - Software Engineering I*** working with <a href='https://scholar.xjtlu.edu.cn/en/persons/SoonTin'> Dr. Yihong Wang</a> and <a href='https://scholar.xjtlu.edu.cn/en/persons/SoonTin'> Soon Phei Tin</a>.  at XJTLU, supporting over 300 undergraduate students through 80+ hours of tutoring and leading weekly Q&A sessions as part of a peer-led Mutual Aid Association. I also worked as a one-on-one TA in <a href='https://www.xjtlu.edu.cn/en/study/departments/school-of-advanced-technology'> the **School of Advanced Technology (SAT)** </a> of XJTLU for 2 students retaking core CS modules, delivering 70+ hours of personalized instruction that helped both students successfully pass their courses.
+## Teaching: 
+Previously, I served as a **TA** for high-level CS Course ***CPT203 - Software Engineering I*** working with <a href='https://scholar.xjtlu.edu.cn/en/persons/SoonTin'> Dr. Yihong Wang</a> and <a href='https://scholar.xjtlu.edu.cn/en/persons/SoonTin'> Soon Phei Tin</a>.  at XJTLU, supporting over 300 undergraduate students through 80+ hours of tutoring and leading weekly Q&A sessions as part of a peer-led Mutual Aid Association. I also worked as a one-on-one TA in <a href='https://www.xjtlu.edu.cn/en/study/departments/school-of-advanced-technology'> the **School of Advanced Technology (SAT)** </a> of XJTLU for 2 students retaking core CS modules, delivering 70+ hours of personalized instruction that helped both students successfully pass their courses.
 
 
 
