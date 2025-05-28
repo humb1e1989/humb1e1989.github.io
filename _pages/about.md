@@ -42,7 +42,7 @@ I am currently a **Teaching Assistant (TA) @ UBC** for the course ***COSC 328 - 
 <!-- and basic programming concepts. -->
 
 # **I was**
-working closely with <a href='https://hai-ning-liang.github.io/'> **Prof. Haining Liang**  (HKUST, Prev. UoL&XJTLU)</a> in <a href='https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang'> X-CHI Lab</a> on upper-limb rehabilitation in Virtual Reality (VR), co-advised by <a href='https://www.ucc.ie/en/compsci/people/nanjappandrvijayakumar/'> **Dr. Vijayakumar Nanjappan** (University College Corek, Ireland)</a>, and focused on prototyping high-precision Augmented Reality (AR) text input interface upon Motion Capture System <a href='https://www.vicon.com/'> VICON</a>. 
+working closely with <a href='https://hai-ning-liang.github.io/'> **Prof. Hai-Ning Liang**  (HKUST, Prev. UoL&XJTLU)</a> in <a href='https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang'> X-CHI Lab</a> on upper-limb rehabilitation in Virtual Reality (VR), co-advised by <a href='https://www.ucc.ie/en/compsci/people/nanjappandrvijayakumar/'> **Dr. Vijayakumar Nanjappan** (University College Corek, Ireland)</a>, and focused on prototyping high-precision Augmented Reality (AR) text input interface upon Motion Capture System <a href='https://www.vicon.com/'> VICON</a>. 
 
 <!-- I graduated in **July 2024** with **First-Class Distinction** (Major **GPA: 3.95/4**) from the **University of Liverpool** (via XJTLU's dual-degree program), and I was awarded the University Academic Achievement Award (**Top 10%** scholarship, **¥5,000**) -->
 
