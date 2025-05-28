@@ -36,7 +36,7 @@ latest_posts:
 2. Exploring interaction techniques for delivering explanations in immersive spaces.
 3. Studying how users collaborate with AI systems in XR and how explanation affects such collaboration.
 
-I also serve as a <a href='https://digital-transparency.ok.ubc.ca/research-team/our-research-assistants/iverson-shuchen-yuan/'> **Research Assistant (RA) @ UBC**</a> <a href='https://research.ok.ubc.ca/research-excellence/research-clusters/digital-transparency/'> Digital Transparency Cluster (DTC)</a>, where I am focusing on **trustworthiness in AI**.
+I also serve as a <a href='https://digital-transparency.ok.ubc.ca/research-team/our-research-assistants/iverson-shuchen-yuan/'> **Research Assistant (RA)**</a> in<a href='https://research.ok.ubc.ca/research-excellence/research-clusters/digital-transparency/'> Digital Transparency Cluster (DTC)</a> @ UBC, where I am focusing on **trustworthiness in AI**.
 
 I am currently a **Teaching Assistant (TA) @ UBC** for the course ***COSC 328 - Introduction to Networking*** **@ UBC** working with <a href='https://www.researchgate.net/profile/Scott-Fazackerley-2'> Dr. Scott Fazackerley</a>, where I am providing support for **Python and Commputer Network Conception**. I am also a **TA** in course ***COSC 121 - Computer Programmmin II*** **@ UBC** with Dr. Scott where I am mainly responsible for final exam marking suppot for **Java programming**. 
 <!-- and basic programming concepts. -->
