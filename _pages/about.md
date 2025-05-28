@@ -11,7 +11,7 @@ profile:
   more_info: > # 这里是Pic下面的小字
     <p> - M.Sc Computer Science @ <a href='https://www.ubc.ca/about/'>The University of British Columbia, CA</a></p>
     <p> - B.Sc. Computer Science @ <a href='https://www.liverpool.ac.uk/about/the-university/rankings-and-reputation/'>The University of Liverpool, UK</a></p>
-    <p> - B.Sc. Information and Computing Science @ <a href='https://www.liverpool.ac.uk/about/the-university/rankings-and-reputation/'>Xi'an Jiaotong Liverpool University (Dual Degree Program), CN</a></p>
+    <p> - B.Sc. Information and Computing Science @ <a href='https://www.liverpool.ac.uk/xjtlu/the-xjtlu-partnership/'>Xi'an Jiaotong Liverpool University (Dual Degree Program), CN</a></p>
     <p> - <a href='#'>Survive A1one Inc</a>.</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
