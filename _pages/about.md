@@ -35,10 +35,6 @@ latest_posts:
 1. Investigating how **XAI** can enhance **human understanding and trust** in **XR**.
 2. Exploring **interaction techniques for delivering explanations in immersive spaces.**
 3. Studying **how users collaborate with AI systems in XR** and **how explanation affects such collaboration**.
-<!-- **My CURRENT research focuses on:**
-1. Investigating how **XAI** can enhance human understanding and trust in XR-based decision-making environments.
-2. Exploring interaction techniques for delivering explanations in immersive spaces.
-3. Studying how users collaborate with AI systems in XR and how explanation affects such collaboration. -->
 
 I also serve as a <a href='https://digital-transparency.ok.ubc.ca/research-team/our-research-assistants/iverson-shuchen-yuan/'> **Research Assistant (RA) @**</a> <a href='https://research.ok.ubc.ca/research-excellence/research-clusters/digital-transparency/'> **UBC Digital Transparency Cluster (DTC)**</a>, where I am focusing on **trustworthiness in AI** and designing **AI visualization literacy tools**.
 
