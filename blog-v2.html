@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Neon Grid</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:44px 0 26px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  .head h1{font-size:58px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:15px;margin-top:12px;}
+  .filters{display:flex;gap:9px;flex-wrap:wrap;}
+  /* featured */
+  .feat{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border:1px solid var(--line);background:var(--panel);margin:8px 0 26px;overflow:hidden;}
+  .feat .cover{position:relative;min-height:320px;border-right:1px solid var(--line);}
+  .feat .cover .ph-label{font-size:13px;}
+  .feat .body{padding:38px;display:flex;flex-direction:column;justify-content:center;}
+  .feat .lead{font-family:'Share Tech Mono';color:var(--magenta);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;}
+  .feat h2{font-size:38px;line-height:1.05;margin-bottom:14px;}
+  .feat p{color:var(--muted);font-size:16px;margin-bottom:24px;max-width:42ch;}
+  .feat .m{font-family:'Share Tech Mono';font-size:13px;color:var(--dim);margin-bottom:22px;}
+  /* grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{border:1px solid var(--line);background:var(--panel);position:relative;transition:.2s;cursor:pointer;overflow:hidden;}
+  .card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:var(--glow-cyan);}
+  .card .cv{position:relative;height:148px;border-bottom:1px solid var(--line);}
+  .card .cv::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,229,255,0));transition:.2s;}
+  .card:hover .cv::after{background:linear-gradient(transparent 40%,rgba(0,229,255,.12));}
+  .card .in{padding:18px 18px 20px;}
+  .card .dt{font-family:'Share Tech Mono';font-size:12px;color:var(--magenta);letter-spacing:1px;}
+  .card h3{font-size:20px;margin:8px 0 10px;line-height:1.12;}
+  .card p{color:var(--muted);font-size:13.5px;}
+  .card .rt{font-family:'Share Tech Mono';font-size:12px;color:var(--dim);margin-top:14px;display:flex;justify-content:space-between;}
+  .card .rt .go{color:var(--cyan);opacity:0;transition:.2s;}
+  .card:hover .rt .go{opacity:1;}
+</style>
+</head>
+<body>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="#" class="active">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <div>
+      <p class="eyebrow">signal archive</p>
+      <h1 class="glitch flicker glow-title" data-text="THE BLOG">THE BLOG</h1>
+      <p class="sub">// notes on design, shipping & the messy middle</p>
+    </div>
+    <div class="filters" data-chipgroup>
+      <span class="chip on">all</span><span class="chip">design</span><span class="chip">process</span><span class="chip">career</span>
+    </div>
+  </section>
+
+  <a class="feat" href="post.html">
+    <div class="cover"><span class="ph"></span><span class="ph-label mono">[ featured cover · 1200×800 ]</span></div>
+    <div class="body">
+      <span class="lead">▍ featured transmission</span>
+      <h2 class="glitch" data-text="Designing for delight without the noise">Designing for delight without the noise</h2>
+      <p class="m mono">2026-06-12 · 06:24 read · #design</p>
+      <p>How a little restraint makes playful interfaces feel grown-up — and why the best micro-interactions are the ones you never notice.</p>
+      <span class="btn">Read entry →</span>
+    </div>
+  </a>
+
+  <section class="grid">
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2026-05-28</span><h3 class="glitch" data-text="Shipping 100 small things">Shipping 100 small things</h3><p>A year of tiny releases and what they taught me about momentum.</p><div class="rt"><span>#process · 09:10</span><span class="go">open →</span></div></div></a>
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2026-04-09</span><h3 class="glitch" data-text="A portfolio is a garden">A portfolio is a garden, not a museum</h3><p>Why I stopped polishing case studies and started planting them.</p><div class="rt"><span>#career · 05:02</span><span class="go">open →</span></div></div></a>
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2026-03-15</span><h3 class="glitch" data-text="The interview question I always ask">The interview question I always ask</h3><p>What “tell me about a bug you loved” reveals about a designer.</p><div class="rt"><span>#career · 07:41</span><span class="go">open →</span></div></div></a>
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2026-02-02</span><h3 class="glitch" data-text="My Figma file is a disaster">My Figma file is a disaster and that's fine</h3><p>In defense of messy canvases and thinking out loud.</p><div class="rt"><span>#tools · 04:18</span><span class="go">open →</span></div></div></a>
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2026-01-11</span><h3 class="glitch" data-text="Naming things is the whole job">Naming things is the whole job</h3><p>A short rant about labels, taxonomy, and shared language.</p><div class="rt"><span>#design · 03:50</span><span class="go">open →</span></div></div></a>
+    <a class="card" href="post.html"><div class="cv"><span class="ph"></span><span class="ph-label mono">[ cover ]</span></div><div class="in"><span class="dt">2025-12-20</span><h3 class="glitch" data-text="What I unlearned in 2025">What I unlearned in 2025</h3><p>The habits I dropped and the ones that finally stuck.</p><div class="rt"><span>#process · 06:33</span><span class="go">open →</span></div></div></a>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+</body>
+</html>

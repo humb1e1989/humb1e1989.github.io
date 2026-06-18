@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post — HUD Reader</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .post-wrap{display:grid;grid-template-columns:230px 1fr;gap:48px;padding:40px 0 20px;align-items:start;}
+  /* HUD sidebar */
+  .hud{position:sticky;top:28px;display:flex;flex-direction:column;gap:18px;}
+  .hud .blk{border:1px solid var(--line);background:var(--panel);padding:16px;}
+  .hud .lbl{font-family:'Share Tech Mono';font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--magenta);margin-bottom:10px;}
+  .gauge{margin-bottom:12px;}
+  .gauge:last-child{margin-bottom:0;}
+  .gauge .t{display:flex;justify-content:space-between;font-family:'Share Tech Mono';font-size:11px;color:var(--muted);margin-bottom:5px;text-transform:uppercase;}
+  .gauge .track{height:6px;background:#0a0d18;border:1px solid var(--line-soft);position:relative;overflow:hidden;}
+  .gauge .fill{position:absolute;inset:0;width:var(--w,60%);background:linear-gradient(90deg,var(--cyan),var(--magenta));box-shadow:var(--glow-cyan);}
+  .toc{display:flex;flex-direction:column;gap:8px;font-family:'Share Tech Mono';font-size:12px;}
+  .toc a{color:var(--muted);transition:.16s;padding-left:12px;border-left:2px solid transparent;}
+  .toc a:hover{color:var(--cyan);border-color:var(--cyan);}
+  /* article */
+  article{max-width:680px;}
+  .a-head .eyebrow{margin-bottom:16px;}
+  .a-head h1{font-size:46px;line-height:1.08;margin-bottom:18px;}
+  .a-head .meta{font-family:'Share Tech Mono';font-size:13px;color:var(--dim);display:flex;gap:18px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:12px 0;}
+  .cover{position:relative;height:300px;border:1px solid var(--line);margin:30px 0;}
+  article p{font-size:17.5px;color:#c9d4e8;margin:20px 0;}
+  article h2{font-size:27px;margin:38px 0 14px;color:var(--cyan);text-shadow:0 0 14px rgba(0,229,255,.35);}
+  article h2::before{content:"▍ ";color:var(--magenta);}
+  article blockquote{border-left:3px solid var(--magenta);box-shadow:-1px 0 14px rgba(255,45,155,.25);padding:6px 0 6px 22px;margin:28px 0;font-size:22px;color:#fff;font-weight:500;}
+  article code{font-family:'Share Tech Mono';background:#0a0d18;border:1px solid var(--line);color:var(--acid);padding:2px 6px;font-size:14px;}
+  .codeblk{font-family:'Share Tech Mono';background:#080b14;border:1px solid var(--line);padding:18px 20px;font-size:14px;color:var(--muted);margin:24px 0;overflow:auto;}
+  .codeblk .c{color:var(--dim);}
+  .codeblk .k{color:var(--cyan);}
+  .endnav{display:flex;justify-content:space-between;margin-top:46px;border-top:1px solid var(--line);padding-top:22px;font-family:'Share Tech Mono';font-size:13px;}
+  .endnav a{color:var(--muted);}.endnav a:hover{color:var(--cyan);}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html" class="active">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <div class="post-wrap">
+    <aside class="hud">
+      <div class="blk">
+        <div class="lbl">// read_state</div>
+        <div class="gauge"><div class="t"><span>progress</span><span id="pct">0%</span></div><div class="track"><div class="fill" id="pf" style="--w:0%"></div></div></div>
+        <div class="gauge"><div class="t"><span>est. time</span><span>06:24</span></div><div class="track"><div class="fill" style="--w:38%"></div></div></div>
+      </div>
+      <div class="blk">
+        <div class="lbl">// sections</div>
+        <nav class="toc">
+          <a href="#s1">01 · The noise problem</a>
+          <a href="#s2">02 · Restraint as craft</a>
+          <a href="#s3">03 · A small checklist</a>
+        </nav>
+      </div>
+      <div class="blk">
+        <div class="lbl">// author</div>
+        <p class="mono" style="font-size:12px;color:var(--muted);line-height:1.7;">JORDAN LEE<br>product designer<br><span class="hl">@ open to work</span></p>
+      </div>
+    </aside>
+
+    <article>
+      <div class="a-head">
+        <p class="eyebrow">design · entry 001</p>
+        <h1 class="glow-title">Designing for delight without the noise</h1>
+        <div class="meta mono"><span>2026-06-12</span><span>06:24 read</span><span>#design #craft</span></div>
+      </div>
+      <div class="cover"><span class="ph"></span><span class="ph-label mono">[ hero illustration · 1200×600 ]</span></div>
+
+      <p>Every product wants to feel “delightful” now. Confetti on checkout. A bouncing mascot. Three different toast animations fighting for attention. Somewhere along the way we confused <em>delight</em> with <em>noise</em>.</p>
+      <h2 id="s1">The noise problem</h2>
+      <p>Noise is any motion, color, or sound that asks for attention it didn't earn. It's the interface equivalent of someone talking loudly on a quiet train. The first one is charming. The tenth is exhausting.</p>
+      <blockquote>Delight is what's left after you remove everything that's just showing off.</blockquote>
+      <h2 id="s2">Restraint as craft</h2>
+      <p>The interfaces I keep coming back to share a trait: they're <code>quiet by default</code> and expressive on purpose. Motion exists to explain a change, not to decorate it.</p>
+      <div class="codeblk"><span class="c">// the rule I design by</span><br><span class="k">if</span> (motion.explains_a_change) keep();<br><span class="k">else</span> cut();</div>
+      <h2 id="s3">A small checklist</h2>
+      <p>Before shipping any animation I ask: does it tell the user where something came from, where it went, or that it worked? If the answer is none of those, it's noise — and it goes.</p>
+      <p>Playful and grown-up aren't opposites. The trick is spending your delight budget on a few moments that matter instead of sprinkling it everywhere.</p>
+
+      <div class="endnav">
+        <a href="blog.html">← back to feed</a>
+        <a href="post.html">next: Shipping 100 small things →</a>
+      </div>
+    </article>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+<script>
+  // mirror progress into HUD gauge
+  addEventListener('scroll',()=>{const h=document.documentElement;const p=Math.round(h.scrollTop/(h.scrollHeight-h.clientHeight||1)*100);document.getElementById('pct').textContent=p+'%';document.getElementById('pf').style.setProperty('--w',p+'%');},{passive:true});
+</script>
+</body>
+</html>

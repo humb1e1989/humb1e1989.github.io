@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Lee — Home</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.3fr .8fr;gap:48px;align-items:center;padding:54px 0 64px;}
+  .hero .boot{font-family:'Share Tech Mono';font-size:13px;color:var(--acid);margin-bottom:18px;min-height:1.5em;}
+  .hero h1{font-family:'Orbitron',sans-serif;font-weight:800;font-size:74px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
+  .hero .role{font-family:'Share Tech Mono';font-size:18px;color:var(--magenta);letter-spacing:1px;margin-bottom:22px;text-transform:uppercase;}
+  .hero .lede{font-size:19px;color:#c9d4e8;max-width:42ch;margin-bottom:30px;}
+  .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:26px;}
+  .socials{display:flex;gap:8px;flex-wrap:wrap;font-family:'Share Tech Mono';font-size:13px;}
+  .socials a{padding:6px 12px;border:1px solid var(--line-soft);color:var(--muted);transition:.16s;}
+  .socials a:hover{color:var(--cyan);border-color:var(--cyan);box-shadow:inset 0 0 12px rgba(0,229,255,.14);}
+  /* portrait card */
+  .pcard{border:1px solid var(--line);background:var(--panel);overflow:hidden;}
+  .pcard .portrait{position:relative;height:300px;border-bottom:1px solid var(--line);}
+  .pcard .scan{position:absolute;left:0;right:0;height:2px;background:var(--cyan);box-shadow:var(--glow-cyan);animation:scandown 3.2s linear infinite;}
+  @keyframes scandown{0%{top:0}100%{top:100%}}
+  .pcard .id{padding:16px 18px;font-family:'Share Tech Mono';font-size:12px;color:var(--muted);line-height:1.9;}
+  .pcard .id .row{display:flex;justify-content:space-between;}
+  .pcard .id .row span:last-child{color:var(--cyan);}
+  .pcard .id .row .hl{color:var(--acid);}
+  /* explore cards */
+  .sec-title{margin-bottom:22px;}
+  .explore{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding-bottom:60px;}
+  .ecard{position:relative;border:1px solid var(--line);background:var(--panel);padding:26px 26px 24px;transition:.18s;overflow:hidden;}
+  .ecard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--cyan),var(--magenta));box-shadow:var(--glow-cyan);transform:scaleY(0);transform-origin:top;transition:.2s;}
+  .ecard:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:var(--glow-cyan);}
+  .ecard:hover::before{transform:scaleY(1);}
+  .ecard .n{font-family:'Share Tech Mono';font-size:13px;color:var(--magenta);}
+  .ecard h3{font-size:27px;margin:8px 0 8px;text-transform:uppercase;letter-spacing:.5px;}
+  .ecard p{color:var(--muted);font-size:14.5px;margin-bottom:16px;}
+  .ecard .go{font-family:'Share Tech Mono';font-size:13px;color:var(--cyan);opacity:.6;transition:.18s;}
+  .ecard:hover .go{opacity:1;letter-spacing:2px;}
+  /* latest */
+  .latest{padding-bottom:60px;}
+  .lhead{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px;}
+  .lhead a{font-family:'Share Tech Mono';font-size:13px;color:var(--cyan);}
+  .lrow{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;padding:16px 6px;border-top:1px solid var(--line-soft);transition:.16s;}
+  .lrow:last-child{border-bottom:1px solid var(--line-soft);}
+  .lrow:hover{padding-left:14px;background:rgba(0,229,255,.05);}
+  .lrow .dt{font-family:'Share Tech Mono';font-size:13px;color:var(--dim);}
+  .lrow .t{font-size:19px;}
+  .lrow .rt{font-family:'Share Tech Mono';font-size:12px;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a><a href="blog.html">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="boot" data-type="> booting jordan.lee // v2.6 ... ready" data-type-speed="26"></p>
+      <h1 class="glitch flicker glow-title" data-text="JORDAN LEE">JORDAN LEE</h1>
+      <p class="role">// product designer + writer</p>
+      <p class="lede">I make friendly, useful software for a living and document the craft in my spare time. Quiet interfaces, early shipping, honest writing. Currently looking for my next team.</p>
+      <div class="cta">
+        <a class="btn mag" data-mag="0.3" href="projects.html">▶ View work</a>
+        <a class="btn btn-mag mag" data-mag="0.3" href="blog.html">Read the blog</a>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+      <div class="socials"><a href="#">EMAIL</a><a href="#">GITHUB</a><a href="#">LINKEDIN</a><a href="#">BLUESKY</a></div>
+    </div>
+    <aside class="pcard corner">
+      <div class="portrait"><span class="ph"></span><span class="ph-label mono">[ portrait · 800×800 ]</span><span class="scan"></span></div>
+      <div class="id">
+        <div class="row"><span>CLASS</span><span>Product Designer</span></div>
+        <div class="row"><span>BASE</span><span>Lisbon, PT</span></div>
+        <div class="row"><span>EXP</span><span>12 years</span></div>
+        <div class="row"><span>STATUS</span><span class="hl">Open to work</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <p class="eyebrow">navigate</p>
+  <h2 class="sec-title glow-title">EXPLORE</h2>
+  <section class="explore">
+    <a class="ecard" href="blog.html"><div class="n">01</div><h3 class="glitch" data-text="Writing">Writing</h3><p>Notes on design, shipping & the messy middle. 60+ entries and counting.</p><span class="go">enter blog →</span></a>
+    <a class="ecard" href="projects.html"><div class="n">02</div><h3 class="glitch" data-text="Work">Work</h3><p>Selected case studies — design systems, mobile, motion, side projects.</p><span class="go">enter work →</span></a>
+    <a class="ecard" href="about.html"><div class="n">03</div><h3 class="glitch" data-text="About">About</h3><p>Operator profile: bio, skill matrix, and the career timeline.</p><span class="go">enter about →</span></a>
+    <a class="ecard" href="contact.html"><div class="n">04</div><h3 class="glitch" data-text="Contact">Contact</h3><p>Open to product roles & fun freelance. Fastest channel to reach me.</p><span class="go">open channel →</span></a>
+  </section>
+
+  <section class="latest">
+    <div class="lhead"><h2 class="sec-title glow-title" style="margin:0;">LATEST</h2><a href="blog.html">all posts →</a></div>
+    <a class="lrow" href="post.html"><span class="dt">2026-06-12</span><span class="t glitch" data-text="Designing for delight without the noise">Designing for delight without the noise</span><span class="rt">06:24</span></a>
+    <a class="lrow" href="post.html"><span class="dt">2026-05-28</span><span class="t glitch" data-text="Shipping 100 small things">Shipping 100 small things</span><span class="rt">09:10</span></a>
+    <a class="lrow" href="post.html"><span class="dt">2026-04-09</span><span class="t glitch" data-text="A portfolio is a garden, not a museum">A portfolio is a garden, not a museum</span><span class="rt">05:02</span></a>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+</body>
+</html>

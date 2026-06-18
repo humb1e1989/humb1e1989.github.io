@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Terminal Feed</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:44px 0 30px;}
+  .head h1{font-size:62px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:16px;margin-top:14px;min-height:1.6em;}
+  .filters{display:flex;gap:9px;flex-wrap:wrap;margin:26px 0 22px;}
+  .console{padding:6px 0;}
+  .console .bar{display:flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--line);border-bottom:none;background:var(--bg-1);font-family:'Share Tech Mono';font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;}
+  .console .bar .dot{width:10px;height:10px;border-radius:50%;background:var(--magenta);box-shadow:var(--glow-mag);}
+  .console .bar .dot.c{background:var(--cyan);box-shadow:var(--glow-cyan);}
+  .console .bar .dot.a{background:var(--acid);box-shadow:0 0 8px var(--acid);}
+  .console .bar .path{margin-left:8px;color:var(--cyan);}
+  .feed{border:1px solid var(--line);background:var(--panel);}
+  .logrow{display:grid;grid-template-columns:54px 130px 1fr auto;gap:18px;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line-soft);
+    position:relative;transition:.18s;overflow:hidden;}
+  .logrow:last-child{border-bottom:none;}
+  .logrow:hover{background:rgba(0,229,255,.05);}
+  .logrow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--cyan);box-shadow:var(--glow-cyan);transform:scaleY(0);transition:.18s;}
+  .logrow:hover::before{transform:scaleY(1);}
+  .logrow .ln{font-family:'Share Tech Mono';color:var(--magenta);font-size:14px;}
+  .logrow .dt{font-family:'Share Tech Mono';color:var(--dim);font-size:13px;}
+  .logrow .ttl{font-size:22px;font-weight:600;}
+  .logrow .rt{font-family:'Share Tech Mono';color:var(--muted);font-size:13px;white-space:nowrap;}
+  .logrow .meta{grid-column:3;display:flex;gap:14px;align-items:center;max-height:0;opacity:0;transition:max-height .28s,opacity .28s,margin .28s;}
+  .logrow:hover .meta{max-height:60px;opacity:1;margin-top:8px;}
+  .logrow .blurb{color:var(--muted);font-size:14px;}
+  .pager{display:flex;justify-content:space-between;align-items:center;margin-top:26px;font-family:'Share Tech Mono';font-size:13px;color:var(--dim);}
+  .pager .nums{display:flex;gap:6px;}
+  .pager .nums a{padding:5px 11px;border:1px solid var(--line-soft);color:var(--muted);transition:.16s;}
+  .pager .nums a.on,.pager .nums a:hover{color:var(--cyan);border-color:var(--cyan);box-shadow:inset 0 0 12px rgba(0,229,255,.14);}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="#" class="active">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <p class="eyebrow">transmission log</p>
+    <h1 class="glitch flicker glow-title" data-text="THE BLOG">THE BLOG</h1>
+    <p class="sub" data-type="> tail -f /jordan/thoughts.log  —  notes on design, shipping & the messy middle" data-type-speed="26"></p>
+  </section>
+
+  <div class="filters" data-chipgroup>
+    <span class="chip on">all</span>
+    <span class="chip">design</span>
+    <span class="chip">process</span>
+    <span class="chip">career</span>
+    <span class="chip">tools</span>
+  </div>
+
+  <section class="console">
+    <div class="bar"><span class="dot"></span><span class="dot c"></span><span class="dot a"></span><span class="path">~/jordan/blog — 12 entries</span></div>
+    <div class="feed">
+      <a class="logrow" href="post.html">
+        <span class="ln mono">001</span><span class="dt mono">2026-06-12</span>
+        <span class="ttl glitch" data-text="Designing for delight without the noise">Designing for delight without the noise</span>
+        <span class="rt mono">06:24</span>
+        <div class="meta"><span class="tag">#design</span><span class="blurb">How a little restraint makes playful interfaces feel grown-up.</span></div>
+      </a>
+      <a class="logrow" href="post.html">
+        <span class="ln mono">002</span><span class="dt mono">2026-05-28</span>
+        <span class="ttl glitch" data-text="Shipping 100 small things">Shipping 100 small things</span>
+        <span class="rt mono">09:10</span>
+        <div class="meta"><span class="tag">#process</span><span class="blurb">A year of tiny releases and what they taught me about momentum.</span></div>
+      </a>
+      <a class="logrow" href="post.html">
+        <span class="ln mono">003</span><span class="dt mono">2026-04-09</span>
+        <span class="ttl glitch" data-text="A portfolio is a garden, not a museum">A portfolio is a garden, not a museum</span>
+        <span class="rt mono">05:02</span>
+        <div class="meta"><span class="tag">#career</span><span class="blurb">Why I stopped polishing case studies and started planting them.</span></div>
+      </a>
+      <a class="logrow" href="post.html">
+        <span class="ln mono">004</span><span class="dt mono">2026-03-15</span>
+        <span class="ttl glitch" data-text="The interview question I always ask">The interview question I always ask</span>
+        <span class="rt mono">07:41</span>
+        <div class="meta"><span class="tag">#career</span><span class="blurb">What “tell me about a bug you loved” reveals about a designer.</span></div>
+      </a>
+      <a class="logrow" href="post.html">
+        <span class="ln mono">005</span><span class="dt mono">2026-02-02</span>
+        <span class="ttl glitch" data-text="My Figma file is a disaster and that's fine">My Figma file is a disaster and that's fine</span>
+        <span class="rt mono">04:18</span>
+        <div class="meta"><span class="tag">#tools</span><span class="blurb">In defense of messy canvases and thinking out loud.</span></div>
+      </a>
+    </div>
+    <div class="pager">
+      <span>PAGE 01 / 03</span>
+      <span class="nums"><a class="on">1</a><a>2</a><a>3</a><a>→</a></span>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+</body>
+</html>

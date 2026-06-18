@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Holo List</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:40px 0 28px;}
+  .head h1{font-size:56px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:15px;margin-top:12px;}
+  .layout{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:start;}
+  .list{border-top:1px solid var(--line);}
+  .row{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;padding:24px 10px;border-bottom:1px solid var(--line-soft);cursor:pointer;transition:.18s;position:relative;}
+  .row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--cyan);box-shadow:var(--glow-cyan);transform:scaleY(0);transition:.18s;}
+  .row.on{background:rgba(0,229,255,.05);}
+  .row.on::before{transform:scaleY(1);}
+  .row .num{font-family:'Chakra Petch';font-weight:700;font-size:34px;color:var(--dim);transition:.18s;}
+  .row.on .num{color:var(--cyan);text-shadow:var(--glow-cyan);}
+  .row h3{font-size:23px;}
+  .row .role{font-family:'Share Tech Mono';font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:3px;}
+  .row .yr{font-family:'Share Tech Mono';font-size:13px;color:var(--dim);}
+  /* preview */
+  .preview{position:sticky;top:28px;border:1px solid var(--line);background:var(--panel);overflow:hidden;}
+  .preview .cv{position:relative;height:260px;border-bottom:1px solid var(--line);}
+  .preview .in{padding:22px;}
+  .preview .stack{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+  .preview .stack span{font-family:'Share Tech Mono';font-size:10px;color:var(--cyan);border:1px solid var(--line);padding:3px 7px;text-transform:uppercase;}
+  .preview h4{font-size:22px;margin-bottom:8px;}
+  .preview p{color:var(--muted);font-size:14px;margin-bottom:16px;}
+  .preview .bar{font-family:'Share Tech Mono';font-size:11px;color:var(--magenta);padding:10px 22px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:1px;}
+</style>
+</head>
+<body>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html">Blog</a><a href="#" class="active">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <p class="eyebrow">selected work · 2018—2026</p>
+    <h1 class="glitch flicker glow-title" data-text="PROJECTS">PROJECTS</h1>
+    <p class="sub" data-type="> hover a row — preview renders on the right" data-type-speed="26"></p>
+  </section>
+
+  <div class="layout">
+    <div class="list" id="list">
+      <div class="row on" data-i="0"><span class="num">01</span><div><h3 class="glitch" data-text="Orbit Design System">Orbit Design System</h3><div class="role">Lead designer · systems</div></div><span class="yr">2024</span></div>
+      <div class="row" data-i="1"><span class="num">02</span><div><h3 class="glitch" data-text="Flock Mobile App">Flock Mobile App</h3><div class="role">Product designer · mobile</div></div><span class="yr">2022</span></div>
+      <div class="row" data-i="2"><span class="num">03</span><div><h3 class="glitch" data-text="Motion Guidelines">Motion Guidelines</h3><div class="role">Lead · motion design</div></div><span class="yr">2023</span></div>
+      <div class="row" data-i="3"><span class="num">04</span><div><h3 class="glitch" data-text="Sprout — plant tracker">Sprout — plant tracker</h3><div class="role">Solo · design + build</div></div><span class="yr">2026</span></div>
+    </div>
+
+    <aside class="preview corner">
+      <div class="bar" id="pv-bar">▍ PROJECT 01 / 04</div>
+      <div class="cv"><span class="ph"></span><span class="ph-label mono" id="pv-cap">[ Orbit Design System ]</span></div>
+      <div class="in">
+        <div class="stack" id="pv-stack"></div>
+        <h4 id="pv-title">Orbit Design System</h4>
+        <p id="pv-desc"></p>
+        <a class="btn" href="#">View case study →</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+<script>
+  const data=[
+    {t:"Orbit Design System",d:"Rebuilt Orbit's component library from scratch — 120 components, full token pipeline, adopted by 6 squads in one quarter.",s:["Design system","Figma","Tokens"]},
+    {t:"Flock Mobile App",d:"Redesigned the mobile onboarding end to end. Completion jumped from 41% to 68% over two release cycles.",s:["Mobile","Onboarding","0→1"]},
+    {t:"Motion Guidelines",d:"Authored the org-wide motion guidelines and a starter kit. Now the default reference for every team.",s:["Motion","Guidelines","Prototyping"]},
+    {t:"Sprout — plant tracker",d:"A tiny app that reminds you to water your plants without nagging. Designed, built, shipped solo.",s:["Side project","SwiftUI","Solo"]}
+  ];
+  const rows=[...document.querySelectorAll('.row')];
+  function render(i){
+    const p=data[i];
+    document.getElementById('pv-bar').textContent='▍ PROJECT 0'+(i+1)+' / 04';
+    document.getElementById('pv-cap').textContent='[ '+p.t+' ]';
+    document.getElementById('pv-title').textContent=p.t;
+    document.getElementById('pv-desc').textContent=p.d;
+    document.getElementById('pv-stack').innerHTML=p.s.map(x=>'<span>'+x+'</span>').join('');
+    rows.forEach(r=>r.classList.toggle('on', +r.dataset.i===i));
+  }
+  rows.forEach(r=>r.addEventListener('pointerenter',()=>render(+r.dataset.i)));
+  render(0);
+</script>
+</body>
+</html>

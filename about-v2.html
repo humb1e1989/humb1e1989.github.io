@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Timeline Console</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:40px 0 20px;text-align:center;}
+  .head h1{font-size:56px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:15px;margin-top:12px;}
+  .intro{max-width:620px;margin:0 auto 44px;text-align:center;color:#c9d4e8;font-size:17px;}
+  .tl{position:relative;max-width:780px;margin:0 auto;padding-left:40px;}
+  .tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--magenta));box-shadow:var(--glow-cyan);}
+  .node{position:relative;margin-bottom:26px;opacity:0;transform:translateY(16px);transition:.5s;}
+  .node.show{opacity:1;transform:none;}
+  .node::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:var(--glow-cyan);}
+  .node:hover::before{background:var(--cyan);}
+  .node .yr{font-family:'Share Tech Mono';font-size:12px;color:var(--magenta);letter-spacing:1px;}
+  .node .card{border:1px solid var(--line);background:var(--panel);padding:18px 22px;margin-top:8px;transition:.18s;}
+  .node:hover .card{border-color:var(--cyan);box-shadow:inset 0 0 18px rgba(0,229,255,.08);transform:translateX(4px);}
+  .node h3{font-size:21px;margin-bottom:4px;}
+  .node .co{font-family:'Share Tech Mono';font-size:13px;color:var(--cyan);margin-bottom:8px;}
+  .node p{color:var(--muted);font-size:14.5px;}
+  .stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:var(--panel);max-width:780px;margin:0 auto 44px;}
+  .stat-strip .s{padding:20px;text-align:center;border-right:1px solid var(--line);}
+  .stat-strip .s:last-child{border-right:none;}
+  .stat-strip .n{font-family:'Chakra Petch';font-weight:700;font-size:34px;color:var(--cyan);text-shadow:var(--glow-cyan);}
+  .stat-strip .l{font-family:'Share Tech Mono';font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:4px;}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html">Blog</a><a href="projects.html">Work</a><a href="#" class="active">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <p class="eyebrow">system log · /career</p>
+    <h1 class="glitch flicker glow-title" data-text="THE BACKSTORY">THE BACKSTORY</h1>
+    <p class="sub" data-type="> reconstructing timeline from 2018 → present..." data-type-speed="28"></p>
+  </section>
+  <p class="intro">Product designer, writer, and chronic tinkerer based in Lisbon. Twelve years turning fuzzy ideas into things people use — and writing about the parts that don't make the case study.</p>
+
+  <div class="stat-strip">
+    <div class="s"><div class="n">12</div><div class="l">years</div></div>
+    <div class="s"><div class="n">40+</div><div class="l">shipped</div></div>
+    <div class="s"><div class="n">3</div><div class="l">teams</div></div>
+    <div class="s"><div class="n">∞</div><div class="l">side projects</div></div>
+  </div>
+
+  <div class="tl">
+    <div class="node"><div class="yr">2023 — NOW</div><div class="card"><h3>Senior Product Designer</h3><div class="co">ORBIT · design systems & growth</div><p>Lead designer on the component library and growth surfaces. Built the motion guidelines the whole org now uses.</p></div></div>
+    <div class="node"><div class="yr">2020 — 2023</div><div class="card"><h3>Product Designer</h3><div class="co">FLOCK · mobile, end to end</div><p>Owned the mobile app from research to ship. Took the onboarding flow from 41% to 68% completion.</p></div></div>
+    <div class="node"><div class="yr">2018 — 2020</div><div class="card"><h3>Designer & Front-end</h3><div class="co">STUDIO MARA · freelance</div><p>Designed and built sites and product UIs for early-stage clients. Learned to ship under real constraints.</p></div></div>
+    <div class="node"><div class="yr">2018</div><div class="card"><h3>Started writing in public</h3><div class="co">THE BLOG · ongoing</div><p>Began publishing notes on design and process. 60+ entries and counting — it's the best portfolio I have.</p></div></div>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+<script>
+  const io=new IntersectionObserver((e)=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target);}}),{threshold:.4});
+  document.querySelectorAll('.node').forEach(n=>io.observe(n));
+</script>
+</body>
+</html>

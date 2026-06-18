@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Transmission Terminal</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:40px 0 26px;text-align:center;}
+  .head h1{font-size:54px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:15px;margin-top:12px;}
+  .term{max-width:760px;margin:0 auto;border:1px solid var(--line);background:#080b14;box-shadow:0 0 40px rgba(0,229,255,.08);}
+  .term .bar{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid var(--line);font-family:'Share Tech Mono';font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;}
+  .term .bar .dot{width:10px;height:10px;border-radius:50%;}
+  .d1{background:var(--magenta);box-shadow:var(--glow-mag);}.d2{background:var(--amber);}.d3{background:var(--acid);}
+  .term .bar .path{margin-left:8px;color:var(--cyan);}
+  .term .body{padding:26px 26px 30px;font-family:'Share Tech Mono';font-size:15px;line-height:2;}
+  .term .body .out{color:var(--muted);}
+  .term .body .out .c{color:var(--cyan);}
+  .term .body .out .m{color:var(--magenta);}
+  .field{display:flex;align-items:center;gap:10px;margin-top:6px;}
+  .field .prompt{color:var(--acid);white-space:nowrap;}
+  .field input,.field textarea{flex:1;background:transparent;border:none;outline:none;color:var(--ink);font-family:'Share Tech Mono';font-size:15px;caret-color:var(--cyan);resize:none;}
+  .field textarea{line-height:1.7;min-height:62px;}
+  .field input::placeholder,.field textarea::placeholder{color:var(--dim);}
+  .divider{height:1px;background:var(--line-soft);margin:14px 0;}
+  .actions{display:flex;justify-content:space-between;align-items:center;margin-top:20px;}
+  .hintkeys{font-family:'Share Tech Mono';font-size:12px;color:var(--dim);}
+  .sent{color:var(--acid);margin-top:16px;display:none;}
+  .sent.show{display:block;animation:flick .3s 2;}
+</style>
+</head>
+<body>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="#" class="active">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <p class="eyebrow">open channel</p>
+    <h1 class="glitch flicker glow-title" data-text="TRANSMIT">TRANSMIT</h1>
+    <p class="sub">// fastest way to reach me — i read everything</p>
+  </section>
+
+  <div class="term corner">
+    <div class="bar"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="path">jordan@lee:~/contact$</span></div>
+    <div class="body">
+      <div class="out"><span class="c">$</span> ./open_channel --to <span class="m">jordan.lee</span></div>
+      <div class="out">> channel established. fill the fields and hit <span class="c">TRANSMIT</span>.</div>
+      <div class="divider"></div>
+      <form id="form">
+        <div class="field"><span class="prompt">name&gt;</span><input id="f-name" placeholder="who's transmitting?" autocomplete="off"></div>
+        <div class="field"><span class="prompt">addr&gt;</span><input id="f-mail" placeholder="your@email.com" autocomplete="off"></div>
+        <div class="field"><span class="prompt">msg_&gt;</span><textarea id="f-msg" placeholder="say something..."></textarea></div>
+        <div class="actions">
+          <span class="hintkeys">[ enter ] newline · [ click TRANSMIT ] to send</span>
+          <button type="submit" class="btn mag" data-mag="0.3">▶ Transmit</button>
+        </div>
+        <div class="sent" id="sent">> transmission sent. encrypted &amp; queued. expect a reply within ~48h. ✓</div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">LINKEDIN</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+<script>
+  document.getElementById('form').addEventListener('submit',e=>{
+    e.preventDefault();
+    document.getElementById('sent').classList.add('show');
+  });
+</script>
+</body>
+</html>

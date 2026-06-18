@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Comms Card</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .head{padding:40px 0 28px;text-align:center;}
+  .head h1{font-size:54px;text-transform:uppercase;}
+  .head .sub{font-family:'Share Tech Mono';color:var(--muted);font-size:15px;margin-top:12px;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:920px;margin:0 auto;align-items:start;}
+  .panelb{border:1px solid var(--line);background:var(--panel);padding:28px;}
+  .panelb .lbl{font-family:'Share Tech Mono';font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--magenta);margin-bottom:18px;}
+  .panelb .lbl::before{content:"// ";color:var(--cyan);}
+  /* channels */
+  .ch{display:flex;flex-direction:column;gap:12px;}
+  .chan{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line-soft);padding:15px 18px;transition:.16s;will-change:transform;}
+  .chan:hover{border-color:var(--cyan);box-shadow:inset 0 0 16px rgba(0,229,255,.1);}
+  .chan .l{display:flex;flex-direction:column;}
+  .chan .k{font-family:'Share Tech Mono';font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+  .chan .v{font-size:17px;color:var(--ink);}
+  .chan .go{font-family:'Share Tech Mono';font-size:13px;color:var(--cyan);}
+  .avail{display:flex;align-items:center;gap:12px;border:1px solid rgba(200,255,46,.4);padding:16px 18px;margin-bottom:22px;}
+  .avail .led{width:12px;height:12px;border-radius:50%;background:var(--acid);box-shadow:0 0 10px var(--acid);animation:pulse 1.4s infinite;}
+  .avail .t{font-family:'Share Tech Mono';font-size:13px;}
+  .avail .t b{color:var(--acid);}
+  /* form */
+  .frm{display:flex;flex-direction:column;gap:14px;}
+  .frm label{font-family:'Share Tech Mono';font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);display:block;margin-bottom:6px;}
+  .frm input,.frm textarea{width:100%;background:#080b14;border:1px solid var(--line-soft);color:var(--ink);font-family:'Chakra Petch';font-size:15px;padding:12px 14px;outline:none;transition:.16s;}
+  .frm input:focus,.frm textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),inset 0 0 14px rgba(0,229,255,.08);}
+  .frm textarea{resize:none;min-height:96px;line-height:1.6;}
+  .sent{color:var(--acid);font-family:'Share Tech Mono';font-size:13px;display:none;}
+  .sent.show{display:block;}
+</style>
+</head>
+<body>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="#" class="active">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <section class="head">
+    <p class="eyebrow">open channel</p>
+    <h1 class="glitch flicker glow-title" data-text="GET IN TOUCH">GET IN TOUCH</h1>
+    <p class="sub" data-type="> pick a channel, or drop a message below" data-type-speed="26"></p>
+  </section>
+
+  <div class="grid">
+    <div class="panelb corner">
+      <div class="avail"><span class="led"></span><span class="t">STATUS: <b>open to product design roles</b> &amp; the occasional fun freelance</span></div>
+      <div class="lbl">channels</div>
+      <div class="ch">
+        <a class="chan mag" data-mag="0.25" href="#"><span class="l"><span class="k">email</span><span class="v">hey@jordanlee.dev</span></span><span class="go">→</span></a>
+        <a class="chan mag" data-mag="0.25" href="#"><span class="l"><span class="k">github</span><span class="v">@jordanlee</span></span><span class="go">→</span></a>
+        <a class="chan mag" data-mag="0.25" href="#"><span class="l"><span class="k">linkedin</span><span class="v">in/jordan-lee</span></span><span class="go">→</span></a>
+        <a class="chan mag" data-mag="0.25" href="#"><span class="l"><span class="k">bluesky</span><span class="v">@jordanlee.bsky</span></span><span class="go">→</span></a>
+      </div>
+    </div>
+
+    <div class="panelb corner">
+      <div class="lbl">direct message</div>
+      <form class="frm" id="form">
+        <div><label>name</label><input placeholder="Your name" autocomplete="off"></div>
+        <div><label>email</label><input placeholder="your@email.com" autocomplete="off"></div>
+        <div><label>message</label><textarea placeholder="What's on your mind?"></textarea></div>
+        <button type="submit" class="btn btn-mag mag" data-mag="0.25">▶ Send message</button>
+        <div class="sent" id="sent">✓ sent — i'll reply within ~48h.</div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">LINKEDIN</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+<script>
+  document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('sent').classList.add('show');});
+</script>
+</body>
+</html>

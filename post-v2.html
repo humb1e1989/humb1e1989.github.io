@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post — Datastream</title>
+<link rel="stylesheet" href="cyber.css">
+<style>
+  .reader{max-width:720px;margin:0 auto;padding:30px 0 10px;}
+  .ret{font-family:'Share Tech Mono';font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+  .ret a{color:var(--cyan);}
+  .a-head{text-align:center;padding:30px 0 26px;border-bottom:1px solid var(--line);margin-bottom:8px;}
+  .a-head .eyebrow{margin-bottom:18px;}
+  .a-head h1{font-size:52px;line-height:1.05;margin-bottom:20px;}
+  .a-head .meta{font-family:'Share Tech Mono';font-size:13px;color:var(--dim);display:flex;gap:20px;justify-content:center;}
+  article p{font-size:18px;color:#c9d4e8;margin:22px 0;}
+  article p.drop:first-letter{font-family:'Chakra Petch';font-weight:700;font-size:74px;line-height:.8;float:left;padding:6px 14px 0 0;color:var(--cyan);text-shadow:var(--glow-cyan);}
+  article h2{font-size:26px;margin:40px 0 12px;text-transform:uppercase;letter-spacing:1px;}
+  article h2 .n{font-family:'Share Tech Mono';color:var(--magenta);margin-right:10px;}
+  .pull{font-size:28px;text-align:center;color:#fff;font-weight:600;line-height:1.2;margin:40px auto;max-width:18ch;text-shadow:0 0 22px rgba(255,45,155,.4);}
+  .pull::before,.pull::after{content:"";display:block;width:40px;height:1px;background:var(--magenta);box-shadow:var(--glow-mag);margin:18px auto;}
+  article code{font-family:'Share Tech Mono';background:#0a0d18;border:1px solid var(--line);color:var(--acid);padding:2px 6px;font-size:14px;}
+  .tags{display:flex;gap:8px;justify-content:center;margin:42px 0 0;}
+  .react{display:flex;gap:10px;justify-content:center;margin:38px 0;}
+  .react button{font-family:'Share Tech Mono';font-size:13px;background:transparent;border:1px solid var(--line);color:var(--muted);padding:9px 16px;cursor:pointer;transition:.16s;}
+  .react button:hover{color:var(--acid);border-color:var(--acid);box-shadow:0 0 14px rgba(200,255,46,.25);}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<div class="layer wrap">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">J</span> Jordan//Lee</a>
+    <nav class="nav">
+      <a href="index.html">Home</a><a href="blog.html" class="active">Blog</a><a href="projects.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <span class="status"><span class="led"></span> Online</span>
+    </nav>
+  </header>
+
+  <div class="reader">
+    <p class="ret"><a href="blog.html">← /blog</a></p>
+    <div class="a-head">
+      <p class="eyebrow">design · entry 001</p>
+      <h1 class="glitch glow-title" data-text="Designing for delight without the noise">Designing for delight without the noise</h1>
+      <div class="meta mono"><span>2026-06-12</span><span>06:24 READ</span><span>#design</span></div>
+    </div>
+
+    <article>
+      <p class="drop">Every product wants to feel “delightful” now. Confetti on checkout. A bouncing mascot. Three different toast animations fighting for attention. Somewhere along the way we confused delight with noise.</p>
+      <p>Noise is any motion, color, or sound that asks for attention it didn't earn — the interface equivalent of someone talking loudly on a quiet train. The first one is charming. The tenth is exhausting.</p>
+
+      <p class="pull">Delight is what's left after you remove everything that's just showing off.</p>
+
+      <h2><span class="n">01</span>Quiet by default</h2>
+      <p>The interfaces I keep coming back to are <code>quiet by default</code> and expressive on purpose. Motion exists to explain a change, not to decorate it. Before shipping any animation I ask one question: does it tell the user where something came from, where it went, or that it worked?</p>
+      <p>If the answer is none of those, it's noise — and it goes. Playful and grown-up aren't opposites; the trick is spending your delight budget on a few moments that matter instead of sprinkling it everywhere.</p>
+
+      <div class="react">
+        <button data-sfx>▲ 142</button>
+        <button data-sfx>★ save</button>
+        <button data-sfx>↗ share</button>
+      </div>
+      <div class="tags" data-chipgroup><span class="chip" data-multi>#design</span><span class="chip" data-multi>#craft</span><span class="chip" data-multi>#motion</span></div>
+    </article>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Jordan Lee — built in the dark</span>
+    <span><a href="#">EMAIL</a> · <a href="#">GITHUB</a> · <a href="#">RSS</a></span>
+  </footer>
+</div>
+<script src="cyber.js"></script>
+</body>
+</html>
