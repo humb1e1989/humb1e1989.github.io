@@ -14,7 +14,7 @@
 // };
 
 window.SITE_CONFIG = {
-  home:     "v2",   // 首页:      v1 = hero + 板块入口(以后可加 v2)
+  home:     "v1",   // 首页:      v1 = hero + 板块入口(以后可加 v2)
   blog:     "v2",   // 博客列表:  v1 = 终端流   / v2 = 霓虹网格
   post:     "v2",   // 博客文章:  v1 = HUD阅读器 / v2 = 数据流
   about:    "v2",   // 关于:      v1 = 角色档案 / v2 = 时间线
