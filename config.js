@@ -15,8 +15,8 @@
 
 window.SITE_CONFIG = {
   home:     "v1",   // 首页:      v1 = hero + 板块入口(以后可加 v2)
-  blog:     "v2",   // 博客列表:  v1 = 终端流   / v2 = 霓虹网格
-  post:     "v2",   // 博客文章:  v1 = HUD阅读器 / v2 = 数据流
+  blog:     "v1",   // 博客列表:  v1 = 终端流   / v2 = 霓虹网格
+  post:     "v1",   // 博客文章:  v1 = HUD阅读器 / v2 = 数据流
   about:    "v2",   // 关于:      v1 = 角色档案 / v2 = 时间线
   projects: "v2",   // 作品:      v1 = 卡片解密 / v2 = 全息列表
   contact:  "v2"    // 联系:      v1 = 传输终端 / v2 = 通讯卡
